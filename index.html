@@ -5,6 +5,38 @@
 
     <TITLE>Jens Olsen's clocks</TITLE>
 </head>
+
+<SCRIPT type="text/javascript">
+  function JavaBlink() {
+     var blinks = document.getElementsByTagName('JavaBlink');
+     for (var i = blinks.length - 1; i >= 0; i--) {
+        var s = blinks[i];
+        s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+     }
+     window.setTimeout(JavaBlink, 1000);
+  }
+  if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
+  else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
+  else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
+  else window.onload = JavaBlink;
+</SCRIPT>
+ <style type="text/css">
+      h1{
+        color: #000000;
+      }
+      h2{
+        color: #FF0000;
+      }
+      .boxed {
+        border: 1px solid green ;
+      }
+     mark.red {
+      color:#ff0000;
+      background: none;
+     }
+    </style>
+  </head>
+
 <body TEXT="#505000" BGCOLOR="#FFFFFF">
 <font face=helvetica>
  <center>
@@ -36,6 +68,12 @@
 <p>For feedback on this work, please use the GMAIL address
   obtained by putting "clocks" after "olsen", and separating
   them with a dot.
+
+<p><mark class="red">I would in particular like to hear
+    from people who have archives or particular
+  items on Jens Olsen or related to his clocks. Does someone have the plans
+  of the computus? Is someone willing to help in the translation
+  of Danish texts?</mark>
   
 <p>Last change: 2 october 2022.
   
